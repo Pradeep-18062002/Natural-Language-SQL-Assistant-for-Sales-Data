@@ -26,14 +26,12 @@ SalesBot is an AI-powered backend that allows users to ask natural language ques
 
 ---
 
-## Project Structure
-
 project/
-├── load_db.py # Script to load CSV data into PostgreSQL
-├── api.py # FastAPI backend for question answering
-├── .env # Environment variables (OpenAI key, DB URL)
-├── requirements.txt # Python dependencies
-└── Sales Data.csv # Sample sales dataset
+├── load_db.py         # Script to load CSV data into PostgreSQL
+├── api.py             # FastAPI backend for question answering
+├── .env               # Environment variables (OpenAI key, DB URL)
+├── requirements.txt   # Python dependencies
+└── Sales Data.csv     # Sample sales dataset
 
 
 Sample Dataset Schema
