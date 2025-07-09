@@ -1,8 +1,8 @@
 import pandas as pd
 from sqlalchemy import create_engine
+import os
 
-conn_str = "postgresql://neondb_owner:npg_7tGicxTqN6rm@ep-icy-bar-ae2i4okh-pooler.c-2.us-east-2.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
-
+conn_str = os.getenv("DATABASE_URL")
 engine = create_engine(conn_str)
 
 df = pd.read_csv("./Sales Data.csv")
